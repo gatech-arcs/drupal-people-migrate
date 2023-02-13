@@ -1,4 +1,4 @@
-id: gtcos_drupal_people_migrate
+id: gtcos_people_migrate
 label: GT People profile data CSV file migration
 migration_tags:
   - CSV

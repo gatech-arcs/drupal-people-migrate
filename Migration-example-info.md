@@ -1,5 +1,5 @@
 # Drupal 8+ Migration Example
-## based on https://github.com/jigarius/drupal-migration-example
+#### based on [Drupal Migration Example](https://github.com/jigarius/drupal-migration-example)
 
 Usually when a huge site makes the (wise) decision to migrate to Drupal, one of the biggest concerns of the site owners is _How to migrate the old site's data into the new Drupal site_. The old site might or might not be a Drupal site, but given that the new site is on Drupal, we can make use of the cool _migrate_ module to import data from a variety of data sources including but not limited to XML, JSON, CSV and SQL databases.
 
@@ -12,14 +12,14 @@ Though being written to serve as a simple example for demonstrating the basics o
 * Import of basic relationships between two entities, eg, articles and tags.
 * Import of images / files as Drupal _file_ entities and relating them to the relevant content.
 
-# Quick start
+## Quick start
 
-* Download the files from this repo and put them in the `modules/custom/c11n_migrate` directory. `git clone https://github.com/jigarius/drupal-migration-example.git modules/custom/c11n_migrate`
+* Download the files from this repository and put them in the `modules/custom/c11n_migrate` directory. `git clone https://github.com/jigarius/drupal-migration-example.git modules/custom/c11n_migrate`
 * Install the module. `drush en c11n_migrate -y`
 * See current status of the migrations. `drush migrate-status`
 * Run / re-run the migrations introduced by this module. `drush migrate-import --group=c11n --update`
 
-# The problem
+## The problem
 
 As per project requirements, we wish to import certain data for an educational and cultural insitution.
 
@@ -27,7 +27,7 @@ As per project requirements, we wish to import certain data for an educational a
 * **Tags:** We have a CSV file containing details related to tags for these academic programs. We are required to import these as _terms_ of the _vocabulary_ named _tags_.
 * **Images:** We have images for each academic program. The base name of the images are mentioned in the CSV file for academic programs. To make things easy, we have only one image per program.
 
-# Executing migrations
+## Executing migrations
 
 Before we start with actual migrations, there are certain things which I would point out so as to ensure that you can run your migrations without trouble.
 
@@ -36,7 +36,7 @@ Before we start with actual migrations, there are certain things which I would p
 * While writing a migration, you would usually be updating your migration over and over and re-running them to see how things go. So, to do this quickly, you can re-install the module containing your custom migrations (in this case the _c11n_migrate_ module) and execute the relevant migrations in a single command like `drush config-import --partial --source=sites/sandbox.com/modules/c11n_migrate/config/install -y && drush migrate-import --group=c11n --update -y`.
 * To execute the migrations in this example, you can download this repo and rename the downloaded directory to c11n_migrate. It should work without issues with a _standard_ Drupal 8 install.
 
-# [c11n_migrate.info.yml](c11n_migrate.info.yml)
+## [c11n_migrate.info.yml](c11n_migrate.info.yml)
 
 I usually prefer to name project-specific custom modules with a prefix of _c11n_ (being the numeronym for customization). This way, have a naming convention for custom modules and I can copy any custom module to another site without worrying about having to change prefixes. The fact to be noted is that we have a _.info.yml_ file instead of the _.info_ file we were used to in Drupal 7.
 
@@ -48,17 +48,17 @@ Nothing fancy about the module file as such. It includes a basic project definit
 * **node**: We will be importing _academic programs_ as nodes. Thus, we need the _node_ module.
 * **taxonomy**: We will be importing _tags_ as taxonomy terms. Thus, we need the _taxonomy_ module.
 
-# [c11n_migrate.module](c11n_migrate.module)
+## [c11n_migrate.module](c11n_migrate.module)
 
 In Drupal 8, unlike Drupal 7, a module only provides a _.module_ file only if required. In our example, we do not need the `.module` file, so I have not created one.
 
-# Data source
+## Data source
 
 Ref: [import/README.md](import/README.md)
 
 To import the data, we would obviously require a data source. For the sake of this example, I have provided the source data in a _import_ directory inside the module and the data is copied to the `public://` directory using `hook_install`.
 
-# Migration group
+## Migration group
 
 Ref: [migrate_plus.migration_group.c11n.yml](config/install/migrate_plus.migration_group.c11n.yml)
 
@@ -66,7 +66,7 @@ Like we used to implement _hook_migrate_api()_ in Drupal 7 to declare the API ve
 
 In this example, we define a migration group _c11n_ to provide general information like:
 
-* **id:** A unique ID for the migration. This is usually the _NAME_ part of the migration group declaration file name as discussed above.
+* **id:** A unique ID for the migration. This is usually the _NAME_ part of the migration group declaration filename as discussed above.
 * **label:** A human-friendly name of the migration group as it would in the UI.
 * **description:** A brief description about the migration group.
 * **source_type:** This would appear in the UI to provide a general hint as to where the data for this migration comes from.
@@ -74,7 +74,7 @@ In this example, we define a migration group _c11n_ to provide general informati
 
 We can execute all migrations in a given group with the command `drush migrate-import --group=GROUP`.
 
-# Migration definition: Metadata
+## Migration definition: Metadata
 
 Ref: [migrate_plus.migration.program_data.yml](config/install/migrate_plus.migration.program_data.yml)
 
@@ -89,11 +89,11 @@ In migration declaration file, we declare some metadata about the migration:
 * **dependencies:** Just like in case of migration groups, this segment is used to define modules on which the migration depends. When one of these required modules are missing / removed, the migration is automatically removed.
 * **migration_dependencies:** This element is used to mention IDs of other migrations which must be run before this migration. For example, if we are importing articles and their authors, we need to import author data first so that we can refer to the author's ID while importing the articles. Note that we can leave this undefined for now as we do not have any other migrations defined. I defined this section only after I finished writing the migrations for tags, files, etc.
 
-# Migration definition: Source
+## Migration definition: Source
 
 Ref: [migrate_plus.migration.program_data.yml](config/install/migrate_plus.migration.program_data.yml)
 
-Once done with the meta-data, we define the source of the migration data with the _source_ element in the YAML.
+Once done with the metadata, we define the source of the migration data with the _source_ element in the YAML.
 
 * **plugin:** The plugin responsible for reading the source data. In our case we use the _migrate_source_csv_ module which provides the source plugin _csv_.
 * **path:** Path to the data source file - in this case, the [program.data.csv](import/program/program.data.csv) file.
@@ -101,7 +101,7 @@ Once done with the meta-data, we define the source of the migration data with th
 * **keys:** This parameter defines a number of columns in the source data which form a unique key in the source data. Luckily in our case, the program.data.csv provides a unique ID column so things get easy for us in this migration. This unique key will be used by the migrate module to relate records from the source with the records created in our Drupal site. With this relation, the migrate module can interpret changes in the source data and update the relevant data on the site. To execute an update, we use the parameter `--update` with our `drush migrate-import` command.
 * **fields:** This parameter defines provides a description for the various columns available in the CSV data source. These descriptions just appear in the UI and explain purpose behind each column of the CSV.
 
-# Migration definition: Destination
+## Migration definition: Destination
 
 Ref: [migrate_plus.migration.program_data.yml](config/install/migrate_plus.migration.program_data.yml)
 
@@ -110,7 +110,7 @@ Similarly, we need to tell the migrate module how we want it to use the source d
 * **plugin:** Just like source data is handled by separate plugins, we have _destination_ plugins to handle the output of the migrations. In this case, we want Drupal to create _node_ entities with the academic program data, so we use the _node_ plugin.
 * **default_bundle:** Here, we define the type of nodes we wish to obtain using the migration. Though we can override the bundle for individual imports, this parameter provides a default bundle for entities created by this migration. We will be creating only _program_ nodes, so we mention that here.
 
-# Migration definition: Mapping and processing
+## Migration definition: Mapping and processing
 
 Ref: [migrate_plus.migration.program_data.yml](config/install/migrate_plus.migration.program_data.yml)
 
@@ -119,12 +119,12 @@ If you ever wrote a migration in an earlier version of Drupal, you might already
 * **title:** An easy property to start with, we just assign the _Title_ column of the CSV as the _title_ property of the node.
 * **sticky:** Though Drupal can apply the default value for this property if we skip it, I wanted to demonstrate how to specify a default value for a property. We use the _default_value_ plugin with the _default_value_ parameter to make the imports non-sticky with _sticky = 0_.
 * **uid:** Similarly we specify default owner for the article as the administrative user with _uid = 1_.
-* **body:** The _body_ is a filtered long text field and has various sub-properties we can set. So, we copy the _Body_ column from the CSV file to the _body/value_ property (instead of assigning it to just _body_). In the next line, we specify the _body/format_ property as _restricted_html_. Similary, one can also add a custom summary for the nodes using the _body/summary_ property. However, we should keep in mind that while defining these sub-properties, we need to wrap the property name in quotes because we have a `/` in the property name.
+* **body:** The _body_ is a filtered long text field and has various sub-properties we can set. So, we copy the _Body_ column from tfilehe CSV  to the _body/value_ property (instead of assigning it to just _body_). In the next line, we specify the _body/format_ property as '_restricted_html_'. Similary, one can also add a custom summary for the nodes using the _body/summary_ property. However, we should keep in mind that while defining these sub-properties, we need to wrap the property name in quotes because we have a `/` in the property name.
 * **field_program_level:** With this property we get to try out the useful _static_map_ plugin. Here, the source data uses the values _graduate/undergraduate_ whereas the destination field only accepts _gr/ug_. In Drupal 7, we would have written a few lines of code in a _ProgramDataMigration::prepareRow()_ method, but in Drupal 8, we just write some more YAML. Here, we have the plugin specifications as usual, but we have small dashes with which we are actually defining an array of plugins or a _plugin pipeline_. With the first plugin, we call the function _strtolower_ (with `callback: strtolower`) on the _Level_ property (with `source: Level`). Once the old value is in lower case, we pass it through the _static_map_ (with `plugin: static_map`) and define a map of new values which should be used instead of old values (with the `map` element). Done!
 
 With the parameters above, we can write basic migrations with basic data-manipulation. If you wish to see another basic migration, you can take a look at [migrate_plus.migration.program_tags.yml](config/install/migrate_plus.migration.program_tags.yml). In the sections below, I would explain how to do some complex tasks like importing taxonomy terms and their relations with nodes and uploading files / images and associating them with their relevant nodes.
 
-# Migrating taxonomy terms
+## Migrating taxonomy terms
 
 This section is about migrating relations between two entities. Before jumping to this section, one must ensure that a migration has already been written to import the target entities. In our example, we wish to associate _tags_ (taxonomy terms) to _academic programs_ (nodes). For that, we need to import taxonomy terms and we do that in [migrate_plus.migration.program_tags.yml](config/install/migrate_plus.migration.program_tags.yml). In the migration for _tags_ data, we use the tag text as a unique key for the tags. This is because:
 
@@ -148,7 +148,7 @@ So, in the _process_ instructions for _field_program_type_, I use `plugin: entit
 
 To make sure that tag data is imported and available during the academic program migration, we specify the `program_tags` migration in the `migration_dependencies` for the `program_data` migration. Now, when you re-run these migrations, the taxonomy terms get associated to the academic program nodes.
 
-# Migrating files / images
+## Migrating files / images
 
 In our example, every academic program has an associated image file. Say, the client wants us to associate these files to the academic programs created during the migration. Though it might sound difficult, the solution involves only two steps:
 
@@ -160,19 +160,19 @@ Like we did with the taxonomy terms above, first we need to create _file_ entiti
 
 We create the file entities in the [migrate_plus.migration.program_image.yml](config/install/migrate_plus.migration.program_image.yml) file, but this time, using some other process plugins. Following are some important notes on the program_image migration:
 
-* We specify the _key_ parameter in _source_ as the column containing file names, ie, _Image file_. This way, we would be refer to these files in other migrations using their names, eg, `engineering.png`.
+* We specify the _key_ parameter in _source_ as the column containing filenames, ie, _Image file_. This way, we would be refer to these files in other migrations using their names, eg, `engineering.png`.
 * We mention an additional parameter _constants_ in the _source_ element.
   * _file_source_uri_ is used to refer to the path from which files are to be read during the import.
   * _file_dest_uri_ is used to refer to the destination path where files should be copied to. The newly created file entities would refer to files stored in this directory.
 * The `public://` URI refers to the _files_ directory inside the site in question. This is where all public files related to the site are stored.
 * In the _process_ element, we prepare two paths - the file source path and the file destination path.
-  * _file_source_ is obtained by concatenating the _file_source_uri_ with the _Image file_ column which stores the file's basename. Using `delimiter: /` we tell the migrate module to join the two strings with a `/ (slash)` in between to ensure we have a valid file name. In short, we do `file_source_uri . '/' . basename` using the `concat` plugin.
+  * _file_source_ is obtained by concatenating the _file_source_uri_ with the _Image file_ column which stores the file's basename. Using `delimiter: /` we tell the migrate module to join the two strings with a `/ (slash)` in between to ensure we have a valid filename. In short, we do `file_source_uri . '/' . basename` using the `concat` plugin.
   * _file_dest_, in a similar way, is `file_dest_uri . '/' . basename`. This is where we utilize the constants we defined in the _source_ element.
 * Now, we use the _file_source_ and _file_dest_ paths generated above with `plugin: file_copy`. The _file_copy_ plugin simply copies the files from the `file_source` path to the `file_dest` path. All the steps we did above were just for being able to copy the files.
 * Finally, since the _destination_ of the migration is `entity:file`, the migrate module would use the file created in the previous step to generate a _file_ entity, thereby generating a unique file ID.
 
 **Step 2, associate files:**
 
-Once the heavy-lifting is done and we have our file entities, we need to put the files to use by associating them to academic programs. To do this, we write add processing instructions for `file_image` in [migration_plus.migration.program_data.yml](config/install/migration_plus.migration.program_data.yml). Just like we did for taxonomy terms, we tell the migrate module that the _Image file_ column contains a unique file name, which refers to a file entity created during the _program_image_ migration. Hence, we write `plugin: migration` and `migration: program_image`. And it's done!
+Once the heavy-lifting is done and we have our file entities, we need to put the files to use by associating them to academic programs. To do this, we write add processing instructions for `file_image` in [migration_plus.migration.program_data.yml](config/install/migration_plus.migration.program_data.yml). Just like we did for taxonomy terms, we tell the migrate module that the _Image file_ column contains a unique filename, which refers to a file entity created during the _program_image_ migration. Hence, we write `plugin: migration` and `migration: program_image`. And it's done!
 
 To make sure that tag data is imported and available during the academic program migration, we specify the `program_image` migration in the `migration_dependencies` for the `program_data` migration. Now, when you run these migrations, the image files get associated to the academic program nodes.

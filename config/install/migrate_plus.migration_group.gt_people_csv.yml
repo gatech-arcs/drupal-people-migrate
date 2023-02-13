@@ -1,7 +1,7 @@
 # A "migration group" is as the name suggests, a group of migrations.
 
 # The machine name of the group, to be referenced in individual migrations
-id: gt_people
+id: gtcos_people
 
 # A human-friendly label for the group.
 label: GT CoS People profiles migrations
@@ -27,4 +27,4 @@ source_type: CSV or JSON files
 dependencies:
   enforced:
     module:
-      - gtcos_drupal_people_migrate
+      - gtcos_people_migrate
