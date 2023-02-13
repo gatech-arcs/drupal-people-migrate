@@ -1,0 +1,12 @@
+{
+  "filters": {
+      "allowlist": {
+          "allow": [
+              "restricted_html",
+              "formatted_html",
+              "full_html",
+              "advanced_html"
+          ]
+      }
+  }
+}
