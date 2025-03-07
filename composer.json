@@ -1,6 +1,6 @@
 {
     "name": "gtsciences/gt-people-migrate",
-    "description": "GT People Profiles",
+    "description": "GT People Profiles Migration",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "keywords": [

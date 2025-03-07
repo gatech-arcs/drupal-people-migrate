@@ -1,4 +1,5 @@
 # Drupal 8+ Migration Example
+
 __Based on [Drupal Migration Example](https://github.com/jigarius/drupal-migration-example)__
 
 Usually when a huge site makes the (wise) decision to migrate to Drupal, one of the biggest concerns of the site owners is _How to migrate the old site's data into the new Drupal site_. The old site might or might not be a Drupal site, but given that the new site is on Drupal, we can make use of the cool _migrate_ module to import data from a variety of data sources including but not limited to XML, JSON, CSV and SQL databases.
@@ -23,9 +24,9 @@ Though being written to serve as a simple example for demonstrating the basics o
 
 As per project requirements, we wish to import certain data for an educational and cultural insitution.
 
-* **Academic programs:** We have a CSV file containing details related to academic programs. We are required to create _nodes_ of type _program_ with the data.
-* **Tags:** We have a CSV file containing details related to tags for these academic programs. We are required to import these as _terms_ of the _vocabulary_ named _tags_.
-* **Images:** We have images for each academic program. The base name of the images are mentioned in the CSV file for academic programs. To make things easy, we have only one image per program.
+* _Academic programs_: We have a CSV file containing details related to academic programs. We are required to create _nodes_ of type _program_ with the data.
+* _Tags_: We have a CSV file containing details related to tags for these academic programs. We are required to import these as _terms_ of the _vocabulary_ named _tags_.
+* _Images_: We have images for each academic program. The base name of the images are mentioned in the CSV file for academic programs. To make things easy, we have only one image per program.
 
 ## Executing migrations
 
