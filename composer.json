@@ -1,19 +1,20 @@
 {
-    "name": "gtsciences/gtcos_people_migrate",
+    "name": "gtsciences/gt-people-migrate",
     "description": "GT People Profiles",
-    "type": "drupal-custom-module",
+    "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
-    "support": {
-        "issues": "https://github.com/gatech-arcs/gtcos_drupal_people_migrate/issues",
-        "source": "https://github.com/gatech-arcs/gtcos_drupal_people_migrate"
-    },
     "keywords": [
         "Drupal",
         "Georgia Tech",
-        "Profiles"
+        "Profiles",
+        "drupal recipe",
+        "recipe",
+        "migrate",
+        "csv"
     ],
     "require": {
-        "drupal/pathauto": "^1.9",
-        "drupal/twig_tweak": "^3.1"
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_source_ui": "^1.2",
+        "drupal/migrate_source_csv": "^3.7"
     }
 }

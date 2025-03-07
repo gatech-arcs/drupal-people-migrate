@@ -1,0 +1,11 @@
+name: 'GT People Migrate'
+type: 'Site'
+description: 'Drupal recipe for the GT People content migrations'
+
+recipes:
+  - core/recipes/tags_taxonomy
+
+install:
+  - migrate_plus
+  - migrate_source_csv
+  - migrate_source_ui

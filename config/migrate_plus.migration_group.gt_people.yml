@@ -1,0 +1,20 @@
+langcode: en
+status: true
+
+# The machine name of the group, to be referenced in individual migrations
+id: gt_people_import
+label: 'GT People profiles migration'
+description: 'Custom profile data migrations via CSV or JSON (pending)'
+
+source_type: 'CSV or JSON files'
+module: null
+dependencies: {}
+
+shared_configuration:
+  migration_tags:
+    - CSV
+  source:
+    plugin: csv
+    path: '/dev/null'
+    ids:
+      - id

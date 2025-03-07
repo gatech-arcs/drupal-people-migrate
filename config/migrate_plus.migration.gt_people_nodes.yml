@@ -1,4 +1,4 @@
-id: gtcos_people_migrate
+id: gt_people_nodes_chemistry
 label: GT People profile data CSV file migration
 migration_tags:
   - CSV
