@@ -1,3 +1,4 @@
+uuid: fe36c348-5f10-4feb-a5c5-4c0e29a2386c
 langcode: en
 status: true
 dependencies: {}
@@ -33,7 +34,12 @@ process:
   field_gtppl_email: field_gtppl_email
   field_gtppl_fax: field_gtppl_fax
   field_gtppl_gtaccount: field_gtppl_gtaccount
-  field_gtppl_name_display_html: field_gtppl_name_display_html
+  field_gtppl_name_display_html:
+    source: field_gtppl_name_display_html
+    plugin: callback
+    callable: htmlspecialchars
+    arguments:
+      - ENT_QUOTES
   field_gtppl_name_display_plain: field_gtppl_name_display_plain
   field_gtppl_name_first: field_gtppl_name_first
   field_gtppl_name_last: field_gtppl_name_last

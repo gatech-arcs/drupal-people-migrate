@@ -1,5 +1,5 @@
-id,type,uid,title,field_gtppl_name_first,field_gtppl_name_last,field_gtppl_name_display_plain,field_gtppl_name_display_html,field_gtppl_title_custom,field_gtppl_email,field_gtppl_phone,field_gtppl_fax,field_gtppl_awards,field_gtppl_phone,field_gtppl_education,field_gtppl_url_personal,field_publications,field_gtppl_research_keywords,field_gtppl_biography,field_gtppl_research_history,field_gtppl_bldg_room,field_lab_room
-1362,gt_people,1,"Arson, Chloé",Chloe,Arson,Dr. Chloe Arson,Dr. Chloé Arson,Courtesy Appointment,chloe.arson@ce.gatech.edu,,,,,,https://www.ce.gatech.edu/directory/person/chloe-arson,,,,,,
+id,type,uid,title,field_gtppl_name_first,field_gtppl_name_last,field_gtppl_name_display_plain,field_gtppl_name_display_html,field_gtppl_title_custom,field_gtppl_email,field_gtppl_phone,field_gtppl_fax,field_gtppl_awards,field_gtppl_phone_alt,field_gtppl_education,field_gtppl_url_personal,field_publications,field_gtppl_research_keywords,field_gtppl_biography,field_gtppl_research_history,field_gtppl_bldg_room,field_lab_room
+1362,gt_people,1,"Arson, Chloe",Chloe,Arson,Dr. Chloe Arson,Dr. Chloé Arson,Courtesy Appointment,chloe.arson@ce.gatech.edu,,,,,,https://www.ce.gatech.edu/directory/person/chloe-arson,,,,,,
 1365,gt_people,1,"Bailey, Olivia",Olivia,Bailey,Olivia Bailey,Olivia Bailey,Research Technician I,,,,,,,,,,,,,
 1367,gt_people,1,"Bass, Stacey",Stacey,Bass,Stacey Bass,Stacey Bass,Grants Administrator Lead,,404-385-3606,,,,,,,,,,,
 1371,gt_people,1," Bracco, Annalisa",Annalisa,Bracco,Dr. Annalisa Bracco,Dr. Annalisa Bracco,"Associate Chair, Professor",annalisa@eas.gatech.edu,404-894-9472,404-894-5638,"
@@ -128,7 +128,7 @@ Bracco A., Chavanis P., Provenzale A, Spiegel E. A (1999) Particle aggregation i
 1386,gt_people,1,"Cohen, Morris",Morris,Cohen,Dr. Morris Cohen,Dr. Morris Cohen,Courtesy Appointment,morris.cohen@ece.gatech.edu,,,,,,http://www.ece.gatech.edu/faculty-staff/fac_profiles/bio.php?id=175,,,,,,
 1388,gt_people,1,"Crawford, James",James ,Crawford,Dr. James Crawford,Dr. James Crawford,Adjunct Faculty,j.h.crawford@larc.nasa.gov,,,,,,,,,,,,
 1389,gt_people,1,"Crowe, Sean",Sean ,Crowe,Dr. Sean Crowe,Dr. Sean Crowe,Adjunct Faculty,,,,,,,https://www.eoas.ubc.ca/about/faculty/S.Crowe.html,,,,,,
-1390,gt_people,1,"Curry, Judith A. ",Judith,Curry,Dr. Judith A. Curry,Dr. Judith A. Curry,Professor Emeritus,curryja@eas.gatech.edu,404-894-3948,404-894-5638,"
+1390,gt_people,1,"Curry, Judith",Judith,Curry,Dr. Judith A. Curry,Dr. Judith A. Curry,Professor Emeritus,curryja@eas.gatech.edu,404-894-3948,404-894-5638,"
 	Outstanding Interdisciplinary Activities, 2007
 	Henry G. Houghton Research Award, the American Meteorological Society, 1992
 	Presidential Young Investigator Award, the National Science Foundation, 1988
@@ -187,92 +187,22 @@ NATIONAL &amp;amp; INTERNATIONAL DISTINCTIONS
 	Member Steering Committee, NSF/NOAA CAMEO Program, [03/2009-03/2012, web]
 	Member PICES-WG20 Evaluations of Climate Change Projections,   [11/2005-2011, web]&amp;nbsp;
 
-",,,https://www.imanu.org/emanuele-di-lorenzo,"&amp;nbsp;
+",,,https://www.imanu.org/emanuele-di-lorenzo,"Web of Science: https://www.webofscience.com/wos/author/record/E-9107-2012
+	ORCID: https://orcid.org/0000-0002-1935-7363
+	Google Scholar: https://scholar.google.com/citations?user=fpcWWqgAAAAJ
 
 
-FULL LIST
-
-&amp;nbsp;
-
-
-	Web of Science:&amp;nbsp;https://www.webofscience.com/wos/author/record/E-9107-2012&amp;nbsp;
-	ORCID:&amp;nbsp;https://orcid.org/0000-0002-1935-7363
-	Google Scholar:&amp;nbsp;https://scholar.google.com/citations?user=fpcWWqgAAAAJ&amp;amp;hl=en
-	&amp;nbsp;
-
-SELECTED RECENT (bold = Di Lorenzo Research Group)
-
-&amp;nbsp;
-
-
-	
 	Di Lorenzo, E., T.&amp;nbsp;Xu, Y.&amp;nbsp;Zhao, M. Newman, A. Capotondi, S. Stevenson, D. Amaya, B. T. Anderson, R. Ding, J. C.&amp;nbsp;Furtado, Y.&amp;nbsp;Joh, G.&amp;nbsp;Liguori, J. Lou, A. J. Miller, G.&amp;nbsp;Navarra, N. Schneider, D. Vimont, S.&amp;nbsp;Wu&amp;nbsp;and H. Zhang, 2022: Modes and Mechanisms of Pacific Decadal-Scale Variability.&amp;nbsp;Annual Reviews of Marine Science,&amp;nbsp;https://doi.org/10.1146/annurev-marine-040422- 084555&amp;nbsp;
 	
 	
 	Liguori, G., S. McGregor, M. Singh, J. Arblaster and E.&amp;nbsp;Di Lorenzo, 2022: Revisiting ENSO and IOD Contributions to Australian Precipitation.&amp;nbsp;Geophysical Research Letters, 49(1) 12, doi:10.1029/2021gl094295.
 	
 	Park, K., I. Federico, E.&amp;nbsp;Di Lorenzo, T. Ezer, K. M. Cobb, N. Pinardi and G. Coppini, 2022: The contribution of hurricane remote ocean forcing to storm surge along the Southeastern US coast.&amp;nbsp;Coastal Engineering, 173 20, doi:10.1016/j.coastaleng.2022.104098
-	Navarra, G. and E. Di Lorenzo (2021). &amp;quot;Poleward shift and intensification of Kuroshio-Oyashio Extension and North Pacific Transition Zone under climate change &amp;quot; Climate Dynamics, 18, doi:10.1007/s00382-021-05677-0.
-	Joh, Y., E. Di Lorenzo, L. Siqueira and B. Kirtman (2021). &amp;quot;Enhanced interactions of Kuroshio Extension with tropical Pacific in a changing climate.&amp;quot; Nature Scientific Reports, 11 (6247), doi:https://doi.org/10.1038/s41598-021-85582-y.
-	
-	Zhao, Y. Y., E.&amp;nbsp;Di Lorenzo, D. X. Sun and S. Stevenson, 2021: Tropical Pacific Decadal Variability and ENSO Precursor in CMIP5 Models.&amp;nbsp;Journal of Climate, 34(3) 1023-1045, doi:10.1175/jcli-d-20-0158.1.&amp;nbsp;[PDF]
-	
-	
-	Zhao, Y. Y., M. Newman, A. Capotondi, E.&amp;nbsp;Di Lorenzo&amp;nbsp;and D. X. Sun, 2021: Removing the Effects of Tropical Dynamics from North Pacific Climate Variability.&amp;nbsp;Journal of Climate, 34(23) 9249-9265, doi:10.1175/jcli-d-21-0344.1.&amp;nbsp;
-	
-	Zhao, Y. and E. Di Lorenzo, 2020: The impacts of Extra-tropical ENSO Precursors on Tropical Pacific Decadal-scale Variability. Nature Scientific Reports, doi: 10.1038/s41598-020-59253-3.
-	Joh, Y. and E. Di Lorenzo, 2019: Interactions between Kuroshio extension system and Pacific meridional mode enhances a decadal peak in North Pacific Variability. Nature Scientific Reports, 9:13558,https://doi.org/10.1038/s41598-019-49927-y.
-	Liguori, G. and E. Di Lorenzo: 2019 Separating the North and South Pacific Meridional Modes contributions to ENSO and tropical decadal variability. Geophysical Research Letters, DOI 10.1029/2018GL080320.
-	Sainz, J. F., E. Di Lorenzo, S. Gaines, T. W. Bell, H. Lenihan and R. J. Miller: Spatial planning of Marine Aquaculture under Climate Decadal Variability: A case study for Mussel Farms in California. Frontiers of Marine Science, https://doi.org/10.3389/fmars.2019.00253.
-	Liu, Z. Y. and E. Di Lorenzo, 2018: Mechanisms and Predictability of Pacific Decadal Variability. Current Climate Change Reports, https://doi.org/10.1007/s40641-018-0090-5.
-	Liguori, G., and E. Di Lorenzo (2018), Meridional Modes and Increasing Pacific decadal variability under greenhouse forcing, Geophys. Res. Lett., DOI 10.1002/2017GL076548.
-	Joh, Y. and E. Di Lorenzo,&amp;nbsp;2017: Evidence for stronger and more prolonged Northeast Pacific marine heatwaves. Geophysical Research Letters, 44(22), 11663-11671, doi:10.1002/2017gl075930.
-	Pozo Buil, M. and E. Di Lorenzo, 2017: Decadal predictability of coastal hypoxia in the Northeast Pacific. Geophysical Research Letters, doi:10.1002/2017GL072931.
-	Di Lorenzo, E., and N. J. Mantua (2016), Multi-year persistence of 2014/15 North Pacific marine heatwave, Nature Climate Change, doi:10.1038/nclimate3082.
-	
-	Di Lorenzo, E., G. Liguori, N. Schneider, J. C. Furtado, B. T. Anderson, and M. A. Alexander (2015), ENSO and meridional modes: A null hypothesis for Pacific climate variability, Geophys. Res. Lett., 42(21), 9440-9448, doi:10.1002/2015gl066281.
-	
-	
-	Di Lorenzo, E. (2015), The future of coastal ocean upwelling, Nature, 518(7539).
-	
-	
-	Di Lorenzo, E., and M. D. Ohman (2013), A double-integration hypothesis to explain ocean ecosystem response to climate forcing, Proceedings of the National Academy of Sciences of the United States of America, 110(7), 2496-2499, doi:10.1073/pnas.1218022110.
-	
-	
-	Di Lorenzo, E., D. Mountain, H. P. Batchelder, N. Bond, and E. E. Hofmann (2013), Advances in Marine Ecosystem Dynamics from US GLOBEC The Horizontal-Advection Bottom-up Forcing Paradigm, Oceanography, 26(4), 22-33.
-	
-	
-	Di Lorenzo, E., et al. (2013), Synthesis of Pacific Ocean Climate and Ecosystem Dynamics, Oceanography, 26(4), 68-81.
-	
-	
-	Di Lorenzo, E., K. M. Cobb, J. C. Furtado, N. Schneider, B. T. Anderson, A. Bracco, M. A. Alexander, and D. J. Vimont (2010), Central Pacific El Nino and decadal climate change in the North Pacific Ocean, Nature Geoscience, 3(11), 762-765, doi:10.1038/ngeo984.
-	
-	
-	Di Lorenzo, E., et al. (2009), Nutrient and salinity decadal variations in the central and eastern North Pacific, Geophys. Res. Lett., 36, doi:10.1029/2009gl038261.
-	
-	
-	Di Lorenzo, E., et al. (2008), North Pacific Gyre Oscillation links ocean climate and ecosystem change, Geophys. Res. Lett., 35(8), L08607, doi:10.1029/2007gl032838.
-	
-	
-	Di Lorenzo, E., A. M. Moore, H. G. Arango, B. D. Cornuelle, A. J. Miller, B. Powell, B. S. Chua, and A. F. Bennett (2007), Weak and strong constraint data assimilation in the inverse Regional Ocean Modeling System (ROMS): Development and application for a baroclinic coastal upwelling system, Ocean Modelling, 16(3-4), 160-187, doi:10.1016/j.ocemod.2006.08.002.
-	
-
-
-&amp;nbsp;
-
-
-
-
-&amp;nbsp;
-
-&amp;nbsp;
-","
-	Oceanography
-	Climate Dynamics
-	Inverse and Ocean Modeling
-	Ecosystems and Climate Change
-	Ocean Solutions &amp;amp; Coastal Resilience
-
+	Navarra, G. and E. Di Lorenzo (2021). &amp;quot;Poleward shift and intensification of Kuroshio-Oyashio Extension and North Pacific Transition Zone under climate change &amp;quot; Climate Dynamics, 18, doi:10.1007/s00382-021-05677-0.","Oceanography
+Climate Dynamics
+Inverse and Ocean Modeling
+Ecosystems and Climate Change
+Ocean Solutions and Coastal Resilience
 ",,"Dr. Emanuele Di Lorenzo is a Professor in the Department of Earth, Environmental, and Planetary Sciences at Brown University. Prior to that he was Professor and Director of the Ocean Science and Engineering program at Georgia Tech, which he co-founded in 2016. He is also Chairman and co-founder of Ocean Visions. &amp;nbsp;He received a Ph.D. in ocean and climate sciences from the Scripps Institution of Oceanography in 2003 and joined the faculty at Georgia Tech in 2004 and the Brown faculty in 2022. He is internationally recognized for his work and leadership in understanding ocean climate and its impact on marine ecosystems and coastal communities. More recently, Di Lorenzo efforts have focused on transforming research and knowledge generated in academia into equitable and practicable ocean-based solutions to climate by co-founding in 2019 the Ocean Visions and in 2022 the United Nations Ocean Decade Center on Ocean-Climate Solutions.
 
 
@@ -447,7 +377,7 @@ Follows M.J., T. Ito and J. Marotzke, (2002), &amp;ldquo;The oceans&amp;#39; sub
 	Behavior of the ocean and climate of the earth over the last 100,000 years. Work in this area has helped in understanding the full range of behavior possible for the ocean/climate system, and which parts of this system may be vulnerable to change in the future. My work combines geochemical methods for gathering data on the state of the past ocean with the analytical tools and approaches of modern oceanography.
 
 ",ES&amp;T 1236,ES&amp;T 1185
-1471,gt_people,1,"Montoya, Joseph",Joseph,Montoya,Dr. Joseph Montoya,Dr. Joseph Montoya,Courtesy Appointment,joseph.montoya@biology.gatech.edu,404-894-0479,404-894-4440,,," Ph.D., Biology, Harvard University, 1990",http://www.biology.gatech.edu/faculty/joseph-montoya/,," Biological oceanography: the nitrogen cycle in pelagic ecosystems, isotope biogeochemistry, nitrogen fixation, denitrification, inorganic N uptake, N excretion, plankton physiology",,,ES&amp;T 1244,
+1471,gt_people,1,"Montoya, Joseph",Joseph,Montoya,Dr. Joseph Montoya,Dr. Joseph Montoya,Courtesy Appointment,joseph.montoya@biology.gatech.edu,404-894-0479,404-894-4440,,," Ph.D., Biology, Harvard University, 1990",http://www.biology.gatech.edu/faculty/joseph-montoya/,,," Biological oceanography: the nitrogen cycle in pelagic ecosystems, isotope biogeochemistry, nitrogen fixation, denitrification, inorganic N uptake, N excretion, plankton physiology",,ES&amp;T 1244,
 1475,gt_people,1,"Newman, Andrew",Andrew,Newman,Dr. Andrew Newman,Dr. Andrew Newman,"Associate Chair for Undergraduate Studies, Professor",anewman@gatech.edu,404-894-3976,404-894-5638,"Awards:
 
 
@@ -580,7 +510,7 @@ My research interests lie in understanding active deformation and failure of the
 1514,gt_people,1,"Tokos, Katie",Katie,Tokos,Katie Tokos,Katie Tokos,Student Assistant,,,,,,,,,,,,,
 1515,gt_people,1,"Trostel, John",John,Trostel,John Trostel,John Trostel,Graduate Student,,,,,,,,,,,,GTRI,
 1518,gt_people,1,"Vollmer, Tyler",Tyler,Vollmer,Tyler Vollmer,Tyler Vollmer,Postdoctoral Fellow ,tyler.vollmer@eas.gatech.edu,,,,,,,,,,,ES&amp;T 1108,
-1520,gt_people,1,"Wang, Hsiang-Jui (Ray)",Ray,Wang,Dr. Ray Wang,Dr. Ray Wang,Principal Research Scientist,raywang@eas.gatech.edu,404-894-3815,404-894-5638,"Exceptional Group Achievement Award as Aura Science Team member from NASA Goddard Space Flight Center (2005)
+1520,gt_people,1,"Wang, Hsiang-Jui",Ray,Wang,Dr. Ray Wang,Dr. Ray Wang,Principal Research Scientist,raywang@eas.gatech.edu,404-894-3815,404-894-5638,"Exceptional Group Achievement Award as Aura Science Team member from NASA Goddard Space Flight Center (2005)
 
 Excellent contribution to the scientific and technical reports that earns the Intergovernmental Panel on Climate Change (IPCC), the 2007 Nobel Peace Prize jointly awarded with Albert Arnold (Al) Gore. (2008)
 ",,"Ph.D. Atmospheric Science, Georgia Institute of Technology, 1995
@@ -627,7 +557,7 @@ B.S. Atmospheric Science, National Taiwan University, 1985
 	These interests are investigated by devolpment of new instruments, (e.g., the particle into liquid sampler, PILS) and participating in numerous field studies
 
 ",ES&amp;T 1246,ES&amp;T 2107/2115
-1524,gt_people,1,"Webster, Peter J.",Peter,Webster,Dr. Peter J. Webster,Dr. Peter J. Webster,Professor Emeritus,pjw@eas.gatech.edu,404-894-1748,404-894-5638,,,,http://webster.eas.gatech.edu/,,,,,ES&amp;T 3214,
+1524,gt_people,1,"Webster, Peter",Peter,Webster,Dr. Peter J. Webster,Dr. Peter J. Webster,Professor Emeritus,pjw@eas.gatech.edu,404-894-1748,404-894-5638,,,,http://webster.eas.gatech.edu/,,,,,ES&amp;T 3214,
 1527,gt_people,1,"Wine, Paul",Paul,Wine,Dr. Paul Wine,Dr. Paul Wine,Professor Emeritus,paul.wine@chemistry.gatech.edu,404-894-3425,404-894-5638,"
 	EAS Sustained Research Award, 2010
 	Sigma Xi Best Paper Award for Senior Faculty, 1996
@@ -699,7 +629,7 @@ B.S. Atmospheric Science, National Taiwan University, 1985
 	Dynamical Systems and Statistical Physics
 
 ",ES&amp;T 2252,
-1674,gt_people,1,"McGuire, Jenny L.",Jenny,McGuire,Dr. Jenny L. McGuire,Dr. Jenny L. McGuire,Associate Professor,jmcguire@gatech.edu,,,,,"
+1674,gt_people,1,"McGuire, Jenny",Jenny,McGuire,Dr. Jenny L. McGuire,Dr. Jenny L. McGuire,Associate Professor,jmcguire@gatech.edu,,,,,"
 	PhD, Integrative Biology, UC Berkeley,&amp;nbsp;
 	BS, Earth &amp;amp; Ocean Sciences, Duke University,&amp;nbsp;
 	BS, Biological Anthropology &amp;amp; Anatomy, Duke University
@@ -890,7 +820,7 @@ BS, College of William and Mary, 2008
 	Xiamen University
 
 ",,,,,,,
-2907,gt_people,1,"Ramírez Colón, José",José,Ramírez Colón,Jose Ramirez Colon,José Ramírez Colón,Graduate Student,,,,,,"
+2907,gt_people,1,"Ramirez Colon, Jose",Jose,Ramirez Colon,Jose Ramirez Colon,José Ramírez Colón,Graduate Student,,,,,,"
 	University of Puerto Rico: Rio Piedras
 
 ",,,,,,,
@@ -1027,7 +957,7 @@ BS, College of William and Mary, 2008
 3299,gt_people,1,"Singh, Abhinav ",Abhinav,Singh,Abhinav Singh,Abhinav Singh,Graduate Student,abhinavps@gatech.edu,,,,,,https://ayushinav.github.io/,,,,,,
 3313,gt_people,1,"Porter, Michael",Michael,Porter,Michael Porter,Michael Porter,Lecturer,mporter61@gatech.edu,,,,,,,,,,,,
 3328,gt_people,1,"Pinto, Ameet",Ameet,Pinto,Ameet Pinto,Ameet Pinto,Courtesy Appointment,ameet.pinto@ce.gatech.edu,,,,,,,,,,,,
-3329,gt_people,1,"Macedo Escudero, Jorge L",Jorge,Macedo Escudero,Jorge L Macedo Escudero,Jorge L Macedo Escudero,Courtesy Appointment,jorge.macedo@gatech.edu,,,,,,,,,,,,
+3329,gt_people,1,"Macedo Escudero, Jorge",Jorge,Macedo Escudero,Jorge L Macedo Escudero,Jorge L Macedo Escudero,Courtesy Appointment,jorge.macedo@gatech.edu,,,,,,,,,,,,
 3330,gt_people,1,"Sox, Leda",Leda,Sox, Leda Sox, Leda Sox,Courtesy Appointment,lsox3@gatech.edu,,,,,,,,,,,,
 3417,gt_people,1,"Dixon, Christal",Christal,Dixon,Christal Dixon,Christal Dixon,Faculty Support Coordinator,christal.dixon@eas.gatech.edu,,,,,,,,,,,ES&amp;T 1255,
 3424,gt_people,1,"Wen, Yinghao",Yinghao,Wen,Yinghao Wen,Yinghao Wen,Postdoctoral Fellow,,,,,,,,,,,,,
@@ -1052,7 +982,7 @@ BS, College of William and Mary, 2008
 ",,,,
 3490,gt_people,1,"Clark, David",David,Clark,David Clark,David Clark,Graduate Student,dclark88@gatech.edu,,,,,,,,"OSE_EAS
 ",,,,
-3491,gt_people,1,"Pierce-Walker, Chazerae (Ayo)",Chezarae,Pierce-Walker,Chezarae Pierce-Walker,Chezarae Pierce-Walker,Graduate Student,cpiercewalker3@gatech.edu,,,,,,,,"Space &amp;amp; Planetary Science
+3491,gt_people,1,"Pierce-Walker, Chazerae",Chezarae,Pierce-Walker,Chezarae Pierce-Walker,Chezarae Pierce-Walker,Graduate Student,cpiercewalker3@gatech.edu,,,,,,,,"Space &amp;amp; Planetary Science
 ",,,,
 3492,gt_people,1,"Osuna, Isabelle",Isabelle,Osuna,Isabelle Osuna,Isabelle Osuna,Graduate Student,iosuna3@gatech.edu,,,,,,,,"Other/Interdisciplinary
 ",,,,
@@ -1194,6 +1124,6 @@ Machine Learning and Manifold Learning&amp;nbsp;
 ",,,,,,ES&amp;T 2118,
 3965,gt_people,1,"Dawson, Eliza",Eliza,Dawson,Eliza Dawson,Eliza Dawson,Postdoctoral Fellow,,,,,,,,,,,,,
 3966,gt_people,1,"Borrelli, Madison",Madison,Borrelli,Madison Borrelli,Madison Borrelli,Postdoctoral Fellow,,,,,,,,,,,,,
-4003,gt_people,1,"Sakamoto (Abe), Yumi",Yumi,Sakamoto,Yumi Sakamoto (Abe),Yumi Sakamoto (Abe),Postdoctoral Fellow,,,,,,,,,,,,,
+4003,gt_people,1,"Sakamoto, Yumi",Yumi,Sakamoto,Yumi Sakamoto (Abe),Yumi Sakamoto (Abe),Postdoctoral Fellow,,,,,,,,,,,,,
 4024,gt_people,1,"Zhou, Bowen",Bowen,Zhou,Bowen Zhou,Bowen Zhou,Postdoctoral Fellow,,,,,,,,,,,,,
 4025,gt_people,1,"Zhao, Haipeng",Haipeng,Zhao,Haipeng Zhao,Haipeng Zhao,Postdoctoral Fellow,,,,,,,,,,,,,
