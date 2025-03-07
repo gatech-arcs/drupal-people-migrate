@@ -2,7 +2,7 @@ langcode: en
 status: true
 
 # The machine name of the group, to be referenced in individual migrations
-id: gt_people_import
+id: gt_people
 label: 'GT People profiles migration'
 description: 'Custom profile data migrations via CSV or JSON (pending)'
 
